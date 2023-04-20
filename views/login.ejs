@@ -8,12 +8,12 @@
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
   <% } %>
-    <form action="/login" method="POST">
+    <form action="/login" method="POST" class="needs-validation" novalidate>
       <div class="form-group my-3">
-        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email">
+        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email" required>
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
+        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password" required>
       </div>
       <button type="submit" class="btn btn-lg col-12 btn-dark my-3 text-center">Login</button>
     </form>

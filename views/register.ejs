@@ -2,13 +2,12 @@
 
 <div class="wrapper shadow p-5 bg-secondary-subtle border rounded-3">
   <h1 class="text-center fw-bold">Register</h1>
-
-    <form action="/register" method="POST">
+    <form action="/register" method="POST" class="needs-validation" novalidate>
       <div class="form-group my-3">
-        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email">
+        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email" required>
       </div>
       <div class="form-group">
-        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
+        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password" required>
       </div>
       <button type="submit" class="btn btn-lg col-12 btn-dark my-3 text-center">Register</button>
     </form>
@@ -23,4 +22,4 @@
     </a>
 </div>
 
-<%- include('partials/header') %>
+<%- include('partials/footer') %>

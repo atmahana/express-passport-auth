@@ -24,14 +24,14 @@ module.exports = {
         req.body.password
       );
       if (registerUser) {
-        passport.authenticate("local")(req, res, function () {
+        passport.authenticate("local", {
+          failureRedirect: "/register",
+        })(req, res, function () {
           res.redirect("/secrets");
         });
-      } else {
-        res.redirect("/register");
       }
     } catch (err) {
-      res.send(err);
+      res.redirect("/register");
     }
   },
 

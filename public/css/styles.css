@@ -7,9 +7,12 @@ body {
   background-color: #E8ECEF;
 }
 .centered {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
   min-height: 100vh;
+  gap: 3rem;
 }
 .wrapper{
   display: grid;
