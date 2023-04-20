@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<div class="shadow p-5 text-center bg-secondary-subtle border rounded-3">
+  <div class="container-sm">
+      <i class="fas fa-key fa-6x"></i>
+      <h1 class="display-3">Secrets</h1>
+      <p class="fs-3 text">Don't keep your secrets, share them anonymously!</p>
+  
+      <form action="/submit" method="POST" class="row gap-3">
+        <input type="text" class="form-control text-center" name="secret" placeholder="What's your secret?">
+        <div class="d-flex justify-content-center gap-3">
+          <a class="btn btn-light btn-lg shadow-sm" href="/secrets" role="button">Cancel</a>
+          <button type="submit" class="btn btn-dark btn-lg shadow-sm">Submit</button>
+        </div>
+      </form>
+      
+  </div>
+</div>
+<%- include('partials/footer') %>

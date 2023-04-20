@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="wrapper shadow p-5 bg-secondary-subtle border rounded-3">
+  <h1 class="text-center fw-bold">Register</h1>
+
+    <form action="/register" method="POST">
+      <div class="form-group my-3">
+        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-lg col-12 btn-dark my-3 text-center">Register</button>
+    </form>
+    <p class="text-center text-body-tertiary">Already have an account? Click <a href="/login">here</a> to login.</p>
+    <a class="btn btn-block" href="/auth/google" role="button">
+      <i class="fab fa-google"></i>
+      Sign Up with Google
+    </a>
+    <a class="btn btn-block" href="/auth/facebook" role="button">
+      <i class="fab fa-facebook"></i>
+      Sign Up with Facebook
+    </a>
+    <a class="btn btn-block" href="/auth/discord" role="button">
+      <i class="fab fa-discord"></i>
+      Sign Up with Discord
+    </a>
+</div>
+
+<%- include('partials/header') %>

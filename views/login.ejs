@@ -1,0 +1,31 @@
+<%- include('partials/header') %>
+
+<div class="wrapper shadow p-5 bg-secondary-subtle border rounded-3">
+  <h1 class="text-center fw-bold">Login</h1>
+  <% if(messages.error) { %>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong><%= messages.error %></strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  <% } %>
+    <form action="/login" method="POST">
+      <div class="form-group my-3">
+        <input type="email" class="form-control form-control-lg " name="username" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-lg col-12 btn-dark my-3 text-center">Login</button>
+    </form>
+    <p class="text-center text-body-tertiary">Don't have an account? Click <a href="/register">here</a> to register.</p>
+    <a class="btn btn-block" href="/auth/google" role="button">
+      <i class="fab fa-google"></i>
+      Sign In with Google
+    </a>
+    <a class="btn btn-block" href="/auth/facebook" role="button">
+      <i class="fab fa-facebook"></i>
+      Sign In with Facebook
+    </a>
+</div>
+
+<%- include('partials/footer') %>

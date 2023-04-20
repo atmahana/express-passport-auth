@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #E8ECEF;
+}
+.centered {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.wrapper{
+  display: grid;
+  gap: 1.25rem;
+  width: min(90%, 40rem)
+}
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000000d3;
+  border-radius: 2rem;
+  word-wrap: break-word;
+}
